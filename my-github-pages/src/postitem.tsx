@@ -1,11 +1,13 @@
 import React from 'react';
-import { Box, Image, Text, VStack, HStack, Link, Heading } from '@chakra-ui/react';
+import { Box, Image, Text, VStack, HStack, Link, Heading, Icon } from '@chakra-ui/react';
+import { FaEye, FaHeart, FaComment } from 'react-icons/fa';
 import firstImage from '../src/images/first.png';
 
 interface PostItemProps {
     title: string;
     date: string;
     imageUrl: string;
+
 }
 
 const PostItem: React.FC<PostItemProps> = ({ title, date, imageUrl }) => (
@@ -13,35 +15,48 @@ const PostItem: React.FC<PostItemProps> = ({ title, date, imageUrl }) => (
         borderWidth="1px"
         borderRadius="lg"
         overflow="hidden"
-        p={{ base: 3, md: 4 }}
-        mb={4}
         boxShadow="md"
         transition="all 0.3s"
         _hover={{ boxShadow: "lg", transform: "translateY(-2px)" }}
+        maxWidth="300px"
+
     >
-        <HStack spacing={{ base: 3, md: 4 }} align="start">
-            <Image
-                src={imageUrl}
-                alt={title}
-                boxSize={{ base: "80px", md: "100px", lg: "120px" }}
-                objectFit="cover"
-                borderRadius="md"
-            />
-            <VStack align="start" spacing={2} flex={1}>
-                <Link
-                    fontSize={{ base: "md", md: "lg" }}
-                    fontWeight="bold"
-                    href="#"
-                    color="blue.600"
-                    _hover={{ color: "blue.800", textDecoration: "underline" }}
-                >
-                    {title}
-                </Link>
-                <Text fontSize={{ base: "xs", md: "sm" }} color="gray.500">
-                    {date}
-                </Text>
-            </VStack>
-        </HStack>
+        <Image
+            src={imageUrl}
+            alt={title}
+            width="100%"
+            height="200px"
+            objectFit="cover"
+        />
+        <VStack align="stretch" p={4} spacing={2}>
+            <Link
+                fontSize="lg"
+                fontWeight="bold"
+                href="#"
+                color="gray.800"
+                noOfLines={2}
+                height="50px"
+            >
+                {title}
+            </Link>
+            <HStack justifyContent="space-between" fontSize="sm" color="gray.500">
+                <Text>{date}</Text>
+                <HStack spacing={4}>
+                    <HStack>
+                        <Icon as={FaEye} />
+
+                    </HStack>
+                    <HStack>
+                        <Icon as={FaHeart} />
+
+                    </HStack>
+                    <HStack>
+                        <Icon as={FaComment} />
+
+                    </HStack>
+                </HStack>
+            </HStack>
+        </VStack>
     </Box>
 );
 
@@ -51,19 +66,25 @@ interface Post extends PostItemProps {
 
 const PostList: React.FC = () => {
     const posts: Post[] = [
-        { id: 1, title: '첫번째 Next.js 도전기', date: '2024.09.13', imageUrl: firstImage },
+        {
+            id: 1,
+            title: '고등어의 Next.js 도전기',
+            date: '24.09.14',
+            imageUrl: firstImage
+        },
+        // 추가 게시글...
     ];
 
     return (
         <Box>
-            <Heading as="h2" size="xl" mb={{ base: 4, md: 6 }} color="gray.700">
+            <Heading as="h2" size="xl" mb={6} color="gray.700">
                 게시글
             </Heading>
-            <VStack spacing={{ base: 4, md: 6 }} align="stretch">
+            <HStack spacing={6} flexWrap="wrap" justifyContent="flex-start">
                 {posts.map((post) => (
                     <PostItem key={post.id} {...post} />
                 ))}
-            </VStack>
+            </HStack>
         </Box>
     );
 };
