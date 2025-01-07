@@ -1,5 +1,5 @@
 
-title: 등어 #Your awesome title
+title: 고등어의 팔딱팔딱 #Your awesome title
 email: #youremail@domain.com
 description: > # this means to ignore newlines until "baseurl"
   Write an awesome description for your new site here. You can edit this
@@ -20,10 +20,11 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: Catbook
-  pic: /assets/img/cat.jpg
-  picAlt: "catbook"
-  job: a category-centric theme
+  name: 9bfish8
+  pic: /assets/img/main.png
+  message: 고등어의 팔딱팔딱 🐟
+  picAlt: profile image
+  job: 고등어
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:

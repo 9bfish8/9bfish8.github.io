@@ -2,12 +2,106 @@
 layout: page
 ---
 
+<style>
+    .aboutme {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .post_content {
+        background: linear-gradient(145deg, #ffffff, #f8f9fa);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow:
+                0 10px 30px rgba(0,0,0,0.05),
+                0 1px 8px rgba(0,0,0,0.02);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .post_content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #6FB1FC, #4481EB);
+    }
+
+    .post_content p {
+        font-size: 1.3em;
+        line-height: 1.8;
+        color: #2c3e50;
+        letter-spacing: 0.02em;
+    }
+
+    .title-text {
+        font-size: 1.5em;
+        font-weight: 600;
+        background: linear-gradient(90deg, #4481EB, #6FB1FC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .sub-text {
+        color: #666;
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+
+    .post_content img {
+        width: 100%;
+        border-radius: 15px;
+        margin: 25px 0;
+        transform: scale(0.98);
+        transition: all 0.3s ease;
+        box-shadow:
+                0 15px 35px rgba(0,0,0,0.1),
+                0 3px 10px rgba(0,0,0,0.07);
+    }
+
+    .post_content img:hover {
+        transform: scale(1);
+        box-shadow:
+                0 20px 40px rgba(0,0,0,0.12),
+                0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+        100% { transform: translateY(0px); }
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+        .aboutme {
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        .post_content {
+            padding: 25px;
+        }
+
+        .post_content p {
+            font-size: 1.1em;
+        }
+    }
+</style>
+
 <section class="aboutme">
     <div class="post_content">
         <p>
-            If you don't need 'about' page, edit the _config.yml to comment out the code.
+            <span class="title-text">고등어의 팔딱팔딱 🐟</span>
             <br><br>
-            <img src="https://starry99.github.io/catbook/assets/img/cat1.jpg">
+            <span class="sub-text">이것저것 다 해버려서 일을 많이 만드는 중 ~~ *^^*</span>
+            <br><br>
+            <img src="assets/img/about.png" alt="about image">
         </p>
     </div>
 </section>

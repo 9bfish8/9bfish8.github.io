@@ -1,5 +1,5 @@
---- 
---- 
+---
+---
 // do not delete two dashed lines
 
 @import 'normalize';
@@ -11,14 +11,14 @@
    ========================================================================== */
 
 @mixin lightMode {
-    --bg_color: #eee;
-    --header_bg: #fafafa;
-    --content_bg: #fff;
+    --bg_color: #e0f7ff;  // 밝은 하늘색 배경
+    --header_bg: #006994;  // 깊은 바다색 헤더
+    --content_bg: rgba(255, 255, 255, 0.95);
     --archive_font: #000;
-    --archive_title: #46a891;
-    --archive_title_hover: #87CDBD;
-    --name_font: #FFAA00;
-    --job_font: #003845;
+    --archive_title: #006994;  // 깊은 바다색
+    --archive_title_hover: #48b2ff;  // 밝은 바다색
+    --name_font: #ffffff;  // 흰색
+    --job_font: #f2e6d0;  // 모래색
     --nav_font: #8d7edc;
     --nav_font_hover: #D4CEF2;
     --shadow_color: rgba(160, 160, 160, 0.05);
@@ -178,14 +178,14 @@ img {
             float: none;
         }
     }
-    
+
     @include mobile-only {
         margin-top: 2rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
 }
-    
+
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -284,6 +284,9 @@ img {
    ========================================================================== */
 
 .header {
+    // 기존 스타일 유지하면서 추가
+    overflow: hidden;
+
     background-color: var(--header_bg);
     z-index: 1;
     position: absolute;
@@ -300,6 +303,26 @@ img {
         width: 18rem;
         height: 100%;
         min-height: 100%;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200%;
+        height: 8px;
+        background: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%) -10px 0,
+        linear-gradient(-45deg, rgba(255,255,255,0.2) 25%, transparent 25%) -10px 0;
+        background-size: 20px 20px;
+        animation: waveMove 1s linear infinite;
+    }
+
+    &::after {
+        bottom: 4px;
+        opacity: 0.5;
+        animation: waveMove 2s linear infinite;
     }
 
 }
@@ -332,7 +355,7 @@ img {
 
     &:hover {
         cursor: pointer;
-        animation: jiggle 2s ease-in-out infinite;
+        animation: float 3s ease-in-out infinite;
     }
 
     @include mobile-only {
@@ -357,7 +380,7 @@ img {
     font-weight: 700;
 }
 
-.theme_changer {   
+.theme_changer {
     cursor: pointer;
     input {
         display: none;
@@ -371,7 +394,7 @@ img {
             transition: box-shadow .5s ease 0s, transform .5s ease .1s;
 
             &:before {
-                
+
                 content: '';
                 width: inherit;
                 height: inherit;
@@ -382,7 +405,7 @@ img {
             }
 
             &:after {
-                
+
                 background: url('../img/s.png') no-repeat center;
                 border-radius: 50%;
                 content: '';
@@ -712,3 +735,17 @@ img {
         color: var(--footer_font_a);
     }
 }
+
+@keyframes waveMove {
+    from { background-position: 0 0; }
+    to { background-position: 20px 0; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+
