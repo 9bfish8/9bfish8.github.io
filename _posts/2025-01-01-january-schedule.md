@@ -7,52 +7,152 @@ date: 2025-01-01
 
 <style>
 .calendar-container {
-    overflow-x: auto;  /* 가로 스크롤 허용 */
-    margin: 20px 0;
+   overflow-x: auto;
+   margin: 20px 0;
 }
 
 .calendar {
-    min-width: 800px;  /* 달력의 최소 너비 설정 */
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed; /* 추가: 칸 크기 고정 */
+   min-width: 300px;
+   width: 100%;
+   border-collapse: collapse;
+   table-layout: fixed;
+}
+
+/* 데스크탑 스타일 */
+@media screen and (min-width: 1024px) {
+   .calendar {
+       min-width: 1000px;
+   }
+   
+   .calendar th {
+       padding: 15px;
+       font-size: 1.1em;
+   }
+   
+   .calendar td {
+       height: 120px;
+       padding: 12px;
+       font-size: 1.1em;
+   }
+   
+   .schedule {
+       font-size: 0.9em;
+   }
+}
+
+/* 태블릿 스타일 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   .calendar {
+       min-width: 700px;
+   }
+   
+   .calendar th {
+       padding: 12px;
+       font-size: 1em;
+   }
+   
+   .calendar td {
+       height: 100px;
+       padding: 8px;
+       font-size: 1em;
+   }
+   
+   .schedule {
+       font-size: 0.85em;
+   }
+}
+
+/* 모바일 스타일 */
+@media screen and (max-width: 767px) {
+   .calendar {
+       min-width: 300px;
+   }
+   
+   .calendar thead {
+       display: none; /* 헤더 숨기기 */
+   }
+   
+   .calendar tr {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 20px;
+       border: 2px solid #ddd;
+       border-radius: 10px;
+       background: #fff;
+   }
+   
+   .calendar td {
+       display: flex;
+       height: auto;
+       padding: 15px;
+       border: none;
+       border-bottom: 1px solid #eee;
+       font-size: 0.95em;
+   }
+   
+   .calendar td:empty {
+       display: none; /* 빈 셀 숨기기 */
+   }
+   
+   .date-cell {
+       min-width: 70px;
+       font-weight: bold;
+       margin-right: 10px;
+   }
+   
+   .schedule {
+       flex: 1;
+       white-space: normal;
+       margin: 0;
+       padding-left: 10px;
+   }
+
+   /* 마지막 셀의 border 제거 */
+   .calendar td:last-child {
+       border-bottom: none;
+   }
 }
 
 .calendar th {
-    background-color: #f5f5f5;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 1.1em;
-    width: 14.28%; /* 추가: 각 칸의 너비를 동일하게 (100% / 7) */
-
+   background-color: #f5f5f5;
+   font-weight: bold;
+   width: 14.28%;
 }
 
 .calendar td {
-    height: 120px;  /* 셀 높이 증가 */
-    border: 1px solid #ddd;
-    padding: 12px;
-    font-size: 1.1em;
-    vertical-align: top;
-    width: 20%; /* 추가: 각 칸의 너비를 동일하게 (100% / 7) */
-    overflow: hidden; /* 추가: 내용이 넘치는 경우 처리 */
-    word-wrap: break-word; /* 추가: 긴 텍스트 자동 줄바꿈 */
-}
-
-.day-number {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.schedule {
-    font-size: 0.9em;
-    color: #444;
-    margin-top: 5px;
-    display: block;
+   border: 1px solid #ddd;
+   vertical-align: top;
+   width: 14.28%;
+   overflow: hidden;
+   word-wrap: break-word;
 }
 
 .holiday { color: #ff0000; }
 .today { background-color: #e8f4f8; }
+
+/* 모바일 스타일 */
+@media screen and (max-width: 767px) {
+    .calendar td {
+        display: flex;
+        align-items: center; /* 세로 중앙 정렬 */
+        padding: 10px 15px;
+        border-bottom: 1px solid #eee;
+        width: 310px;  /* 기본 너비보다 증가 */
+
+    }
+
+    .date-cell {
+        flex-shrink: 0; /* 날짜 영역 크기 고정 */
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .schedule {
+        flex: 1;
+        word-break: keep-all; /* 단어 단위 줄바꿈 */
+        text-align: left;
+    }
+}
 </style>
 
 # 2025년 1월 📅
@@ -150,3 +250,4 @@ date: 2025-01-01
 
 ### 📚 재미 (매일)
 - 블랙라벨 기벡 10문제
+- 운동 7시 - 8시
