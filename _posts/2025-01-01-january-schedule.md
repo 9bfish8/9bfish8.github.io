@@ -1,6 +1,6 @@
 ---
 title: 2025년 1월 일정
-categories: [dev]
+categories: [월간일정]
 comments: true
 date: 2025-01-01
 ---
