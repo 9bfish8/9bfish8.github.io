@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>고등어의 팔딱팔딱</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 12 Jan 2025 23:44:14 +0900</pubDate>
+    <lastBuildDate>Sun, 12 Jan 2025 23:44:14 +0900</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>2025년 1월 일정</title>
+        <description>&lt;style&gt;
+.calendar-container {
+    overflow-x: auto;  /* 가로 스크롤 허용 */
+    margin: 20px 0;
+}
+
+.calendar {
+    min-width: 800px;  /* 달력의 최소 너비 설정 */
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* 추가: 칸 크기 고정 */
+}
+
+.calendar th {
+    background-color: #f5f5f5;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 14.28%; /* 추가: 각 칸의 너비를 동일하게 (100% / 7) */
+
+}
+
+.calendar td {
+    height: 120px;  /* 셀 높이 증가 */
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 1.1em;
+    vertical-align: top;
+    width: 14.28%; /* 추가: 각 칸의 너비를 동일하게 (100% / 7) */
+    overflow: hidden; /* 추가: 내용이 넘치는 경우 처리 */
+    word-wrap: break-word; /* 추가: 긴 텍스트 자동 줄바꿈 */
+}
+
+.day-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.schedule {
+    font-size: 0.9em;
+    color: #444;
+    margin-top: 5px;
+    display: block;
+}
+
+.holiday { color: #ff0000; }
+.today { background-color: #e8f4f8; }
+&lt;/style&gt;
+
+&lt;h1 id=&quot;2025년-1월-&quot;&gt;2025년 1월 📅&lt;/h1&gt;
+
+&lt;table class=&quot;calendar&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th class=&quot;holiday&quot;&gt;일&lt;/th&gt;
+            &lt;th&gt;월&lt;/th&gt;
+            &lt;th&gt;화&lt;/th&gt;
+            &lt;th&gt;수&lt;/th&gt;
+            &lt;th&gt;목&lt;/th&gt;
+            &lt;th&gt;금&lt;/th&gt;
+            &lt;th&gt;토&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+            &lt;td class=&quot;holiday&quot;&gt;1&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;연례행사&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;2&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;글리프 서비스&lt;br /&gt;종료 회의&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;3&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;메일링&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;4&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;외주 배포&lt;br /&gt;AUTODOC 배포&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;holiday&quot;&gt;5&lt;/td&gt;
+            &lt;td&gt;6&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;검수요청&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;7&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;IO 배포&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;8&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;Deutschunterricht&lt;br /&gt;검수+퇴고 시작&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;9&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;검수+퇴고&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;10&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;검수+퇴고 완료&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;11&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;세계관 완결&lt;br /&gt;주간 시작&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;holiday&quot;&gt;12&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;원고 끝 (23)&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;13&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;검수+메일링검수&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;14&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;검수+메일링검수&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;15&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;Deutschunterricht&lt;br /&gt;검수+메일링검수&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;16&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;23화 업로드&lt;br /&gt;(완결X)&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;17&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;메일링&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;18&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;메일링 회의&lt;br /&gt;(10시)&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;holiday&quot;&gt;19&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;마감주 시작&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;20&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;마감주&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;21&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;마감주&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;22&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;Deutschunterricht&lt;br /&gt;마감주 종료&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;23&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;24화 검수&lt;br /&gt;업로드 시작&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;24&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;공덕 퇴사&lt;br /&gt;검수&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;25&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;24화 업로드&lt;br /&gt;검수 완료&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;holiday&quot;&gt;26&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;세계관 1.3 종료&lt;br /&gt;종료 회의&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;27&lt;/td&gt;
+            &lt;td&gt;28&lt;/td&gt;
+            &lt;td&gt;29&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;Deutschunterricht&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+            &lt;td&gt;31&lt;br /&gt;&lt;span class=&quot;schedule&quot;&gt;메일링&lt;/span&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;-이번-달-주요-일정&quot;&gt;📝 이번 달 주요 일정&lt;/h2&gt;
+
+&lt;h3 id=&quot;배포-일정&quot;&gt;배포 일정&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1/4: 외주 배포 + AUTODOC 배포&lt;/li&gt;
+  &lt;li&gt;1/7: IO 배포&lt;/li&gt;
+  &lt;li&gt;1/16: 23화 업로드&lt;/li&gt;
+  &lt;li&gt;1/23~25: 24화 검수 및 업로드&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;deutschunterricht&quot;&gt;Deutschunterricht&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1/8&lt;/li&gt;
+  &lt;li&gt;1/15&lt;/li&gt;
+  &lt;li&gt;1/22&lt;/li&gt;
+  &lt;li&gt;1/29&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;회의-및-메일링&quot;&gt;회의 및 메일링&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1/2: 글리프 서비스 종료 회의&lt;/li&gt;
+  &lt;li&gt;1/3: 메일링&lt;/li&gt;
+  &lt;li&gt;1/17: 메일링&lt;/li&gt;
+  &lt;li&gt;1/18: 메일링 회의 (10시)&lt;/li&gt;
+  &lt;li&gt;1/26: 세계관 1.3 종료 및 종료 회의&lt;/li&gt;
+  &lt;li&gt;1/31: 메일링&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;주요-마감&quot;&gt;주요 마감&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1/8~10: 검수+퇴고 기간&lt;/li&gt;
+  &lt;li&gt;1/11~18: 세계관 완결 주간&lt;/li&gt;
+  &lt;li&gt;1/12: 원고 끝 (23화)&lt;/li&gt;
+  &lt;li&gt;1/13~15: 검수+메일링검수&lt;/li&gt;
+  &lt;li&gt;1/19~22: 마감주&lt;/li&gt;
+  &lt;li&gt;1/24: 공덕 퇴사&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;-재미-매일&quot;&gt;📚 재미 (매일)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;블랙라벨 기벡 10문제&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2025-01/january-schedule</link>
+        <guid isPermaLink="true">http://localhost:4000/2025-01/january-schedule</guid>
+        
+        
+        <category>dev</category>
+        
+      </item>
+    
+      <item>
+        <title>Some articles are just so long they deserve a really long title to see if things will break well</title>
+        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Jul 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018-07/t1</link>
+        <guid isPermaLink="true">http://localhost:4000/2018-07/t1</guid>
+        
+        
+        <category>travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Sample Post</title>
+        <description>&lt;p&gt;This is a sample post.&lt;br /&gt;
+&lt;dfn info=&quot;You can add extra information&quot;&gt;Hover&lt;/dfn&gt; me.&lt;/p&gt;
+
+&lt;h2 id=&quot;header&quot;&gt;Header&lt;/h2&gt;
+
+&lt;h1 id=&quot;head-1-&quot;&gt;Head 1: ‘#’&lt;/h1&gt;
+&lt;h2 id=&quot;head-2-&quot;&gt;Head 2: ‘##’&lt;/h2&gt;
+&lt;h3 id=&quot;head-3-&quot;&gt;Head 3: ‘###’&lt;/h3&gt;
+
+&lt;h2 id=&quot;code-block&quot;&gt;Code block&lt;/h2&gt;
+&lt;p&gt;A Python Example:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Socrates
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;The only true wisdom is in knowing you know nothing.&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;A HTML Example:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;quote&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Maya Angelou --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Try to be a rainbow in someone&apos;s cloud.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A C Example:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&lt;/span&gt; &lt;span class=&quot;cpf&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Confucius&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Everything has beauty, but not everyone sees it.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 01 Nov 2017 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2017-11/s2</link>
+        <guid isPermaLink="true">http://localhost:4000/2017-11/s2</guid>
+        
+        
+        <category>writing</category>
+        
+      </item>
+    
+  </channel>
+</rss>

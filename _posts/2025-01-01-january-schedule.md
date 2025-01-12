@@ -5,7 +5,7 @@ comments: true
 date: 2025-01-01
 ---
 
-<style><style>
+<style>
 .calendar-container {
     overflow-x: auto;  /* 가로 스크롤 허용 */
     margin: 20px 0;
@@ -15,6 +15,7 @@ date: 2025-01-01
     min-width: 800px;  /* 달력의 최소 너비 설정 */
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed; /* 추가: 칸 크기 고정 */
 }
 
 .calendar th {
@@ -22,6 +23,8 @@ date: 2025-01-01
     padding: 15px;
     font-weight: bold;
     font-size: 1.1em;
+    width: 14.28%; /* 추가: 각 칸의 너비를 동일하게 (100% / 7) */
+
 }
 
 .calendar td {
@@ -30,6 +33,9 @@ date: 2025-01-01
     padding: 12px;
     font-size: 1.1em;
     vertical-align: top;
+    width: 14.28%; /* 추가: 각 칸의 너비를 동일하게 (100% / 7) */
+    overflow: hidden; /* 추가: 내용이 넘치는 경우 처리 */
+    word-wrap: break-word; /* 추가: 긴 텍스트 자동 줄바꿈 */
 }
 
 .day-number {
